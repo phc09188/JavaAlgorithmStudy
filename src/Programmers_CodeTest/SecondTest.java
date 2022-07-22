@@ -28,12 +28,26 @@ public class SecondTest {
             return -1;
         }
     }
-    public static int[] solution2(int[] a, int[] b){
+    public int[] solution2(int[] a, int[] b){
         int[] answer = {};
-
-
-
-        return answer;
+        long anum = 0;
+        long bnum = 0;
+        for(int i : a){
+            anum*=10;
+            anum+= i;
+        }
+        for(int i : b){
+            bnum *= 10;
+            bnum+=i;
+        }
+        long sum = anum + bnum;
+        answer = Arrays.stream(String.valueOf(sum).split("")).mapToInt(Integer::parseInt).toArray();
+        if(answer.length ==0){
+            answer = null;
+            return answer;
+        }else{
+            return answer;
+        }
     }
     public static String solution3(String code){
         String answer = "";
@@ -89,7 +103,7 @@ public class SecondTest {
         }
         return answer;
     }
-    public static int solution(int delay, int capacity, int[] times) {
+    public static int solution4(int delay, int capacity, int[] times) {
         Queue qu = new LinkedList();
         int answer = 0;
         int time = 0;
@@ -161,8 +175,8 @@ public class SecondTest {
 //        System.out.println(solution3(code));
         int[] arr = {3,2,0,0,2,3,0,0,2,2,5};
         int[] arr2 = {2, 2, 0, 4, 2, 3, 0, 0, 1, 2, 5, 0, 3, 4, 0};
-        //System.out.println(solution(5,5,arr));
-        //System.out.println(solution(3,5, arr2));
+        //System.out.println(solution4(5,5,arr));
+        //System.out.println(solution4(3,5, arr2));
         int[][] arr3 = {{4,5,2,6,7}, {5,4,2,4,6}, {6,8,4,8,7}, {7,3,6,6,4}, {5,0,4,1,5}};
         System.out.println(Arrays.deepToString(solution5(arr3, 3)));
     }
