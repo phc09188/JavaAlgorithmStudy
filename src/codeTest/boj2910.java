@@ -7,12 +7,8 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
-
 import java.util.Comparator;
-
 public class boj2910 {
-
-
     public static void main(String args[]) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String[] str = br.readLine().split(" ");
@@ -32,7 +28,6 @@ public class boj2910 {
             }
         }
         ArrayList<Integer> v = new ArrayList<Integer>(list.keySet());
-
         Collections.sort(v, new Comparator<Integer>() {
             @Override
             public int compare(Integer a, Integer b) {
@@ -45,7 +40,6 @@ public class boj2910 {
             for(int i=0; i<list.get(element); i++){
                 System.out.print(element+" ");
             }
-
         }
     }
 }
