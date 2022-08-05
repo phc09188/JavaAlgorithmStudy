@@ -56,6 +56,5 @@ public class boj7576 {
         if(date ==1) System.out.println(0);
         else if(date ==-1) System.out.println(-1);
         else System.out.println(date -1);
-
     }
 }
