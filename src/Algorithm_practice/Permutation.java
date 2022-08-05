@@ -36,7 +36,7 @@ public class Permutation {
         arr[depth] = arr[i];
         arr[i] = tmp;
     }
-    public static void main(String[] args){
+    public static void main(pra[] args){
         int[] arr = {1,2,3,4};
         int n = 4;
         int r = 3;

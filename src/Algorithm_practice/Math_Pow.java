@@ -13,7 +13,7 @@ public class Math_Pow {
         }
         return isMinus ? 1/ result : result;
     }
-    public static void main(String[] args){
+    public static void main(pra[] args){
         System.out.println("== Pow == ");
         System.out.println(pow(2,3));
         System.out.println(pow(2,-3));

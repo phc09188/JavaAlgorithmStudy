@@ -1,12 +1,7 @@
 package Algorithm_practice;
 
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
 
 public class Pallindrome {
     public static int solution(int n, int m){
@@ -145,7 +140,7 @@ public class Pallindrome {
 
         return answer;
     }
-    public static void main(String[] args){
+    public static void main(pra[] args){
 //        int n = 1;
 //        int m = 100;
 //        System.out.println(solution(100,300));

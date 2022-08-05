@@ -19,7 +19,7 @@ public class Combination {
         visited[depth] = false;
         combination(arr, visited, depth+1, n, r);
     }
-    public static void main(String[] args){
+    public static void main(pra[] args){
         int[] arr = {1,2,3,4};
         boolean[] visited = {false, false, false, false};
         Combination c = new Combination();

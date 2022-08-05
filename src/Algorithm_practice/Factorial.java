@@ -8,7 +8,7 @@ public class Factorial {
         return n * factorial(n-1);
     }
 
-    public static void main(String[] args){
+    public static void main(pra[] args){
         System.out.println(factorial(3));
     }
 }

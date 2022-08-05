@@ -7,7 +7,7 @@ public class Gcd {
         }
         return gcd(b, a%b);
     }
-    public static void main(String[] args){
+    public static void main(pra[] args){
         System.out.println(gcd(3,5));
     }
 }

@@ -10,7 +10,7 @@ public class Sqrt {
 
         return result;
     }
-    public static void main(String[] args){
+    public static void main(pra[] args){
         System.out.println(sqrt(15));
     }
 }

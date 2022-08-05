@@ -30,11 +30,11 @@ public class firstcodetest {
     public static long Combination(int n, int r){
         return pactorial(n)/(pactorial(n-r) * pactorial(r));
     }
-    public static long solution2(String[] names){
+    public static long solution2(pra[] names){
         if(names.length <=4 && names.length>100){
             return -1;
         }
-            ArrayList<String> arr = new ArrayList();
+            ArrayList<pra> arr = new ArrayList();
         for (int i = 0; i < names.length; i++) {
             if(!arr.contains(names[i])){
                 arr.add(names[i]);
@@ -131,7 +131,7 @@ public class firstcodetest {
 
 
     }
-    public static void main(String[] args) throws IOException{
+    public static void main(pra[] args) throws IOException{
 //        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 //        int n = Integer.parseInt(br.readLine());
 //        String[] names = {"제로", "베이스","자바","스쿨","자바","베이스","베이스","백엔드","화이팅"};
