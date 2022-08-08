@@ -1,6 +1,7 @@
-package Programmers_CodeTest;
+package Programmerslv2;
 
 import java.util.*;
+// 다시풀자
 public class 순위검색 {
     public static int[] solution(String[] info, String[] query) {
         int[] answer = new int[query.length];
@@ -17,7 +18,7 @@ public class 순위검색 {
                     else if(k==3 || k==4){
                         if(a[k].contains(b[k])) count++;
                     }
-                    if(count == 5)
+                    if(count == 5);
                 }
             }
             answer[i] = cnt;
