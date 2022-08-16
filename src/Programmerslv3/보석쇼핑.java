@@ -40,5 +40,4 @@ public class 보석쇼핑 {
         String[] gems = {"DIA", "RUBY", "RUBY", "DIA", "DIA", "EMERALD", "SAPPHIRE", "DIA"};
         System.out.println(Arrays.toString(solution(gems)));
     }
-
 }
