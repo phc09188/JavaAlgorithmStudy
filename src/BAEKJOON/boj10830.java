@@ -27,6 +27,18 @@ public class boj10830 {
         }
         System.out.println(sb);
     }
+    public static int[][] multimatrix(int[][] arr, int[][] arr2){
+        int[][] copy = new int[N][N];
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                for (int k = 0; k < N; k++) {
+                    copy[i][j] += (arr[i][k]*arr2[k][j])%limit;
+                }
+                copy[i][j] %= limit;
+            }
+        }
+        return copy;
+    }
     public static int[][] OddorNot(long cnt){
         if(cnt==1){
             return arr;
@@ -39,17 +51,5 @@ public class boj10830 {
             int[][] copy2 = multimatrix(copy,arr);
             return multimatrix(copy, copy2);
         }
-    }
-    public static int[][] multimatrix(int[][] arr, int[][] arr2){
-        int[][] copy = new int[N][N];
-        for (int i = 0; i < N; i++) {
-            for (int j = 0; j < N; j++) {
-                for (int k = 0; k < N; k++) {
-                    copy[i][j] += (arr[i][k]*arr2[k][j])%limit;
-                }
-                copy[i][j] %= limit;
-            }
-        }
-        return copy;
     }
 }
