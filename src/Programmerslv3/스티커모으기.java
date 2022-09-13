@@ -1,7 +1,6 @@
 package Programmerslv3;
 
-import java.util.*;
-public class 문제1 {
+public class 스티커모으기 {
     public static int solution(int sticker[]) {
         if(sticker.length==1) return sticker[0];
         return Math.max(helper(0, sticker.length-1, sticker), helper(1,sticker.length , sticker));
