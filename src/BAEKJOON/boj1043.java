@@ -69,4 +69,5 @@ public class boj1043 {
 
         parents[ry] = rx;
     }
+
 }
