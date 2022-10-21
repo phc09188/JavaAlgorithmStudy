@@ -49,7 +49,6 @@ public class boj2479 {
         for (int i = 0; i < a.length(); i++) {
             if(a.charAt(i) != b.charAt(i)) cnt++;
         }
-        if(cnt==1) return true;
-        else return false;
+        return cnt == 1;
     }
 }
