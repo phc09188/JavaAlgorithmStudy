@@ -40,15 +40,6 @@ public class boj1238 {
         reverseDist = new int[N + 1];
         Arrays.fill(dist, INF);
         Arrays.fill(reverseDist, INF);
-        int max = 0;
-        for (int i = 1; i < dist.length; i++) {
-            max = Math.max(max, dist[i]+reverseDist[i]);
-        }
-
-        dist = new int[N + 1];
-        reverseDist = new int[N + 1];
-        Arrays.fill(dist, INF);
-        Arrays.fill(reverseDist, INF);
 
         for (int i = 1; i <= M; i++) {
             st = new StringTokenizer(br.readLine());
@@ -83,8 +74,8 @@ public class boj1238 {
             visited[idx] = true;
 
             for (Node node : list.get(idx)) {
-                if (distance[node.to] > distance[idx] + node.to) {
-                    distance[node.to] = distance[idx] + node.to;
+                if (distance[node.to] > distance[idx] + node.weight) {
+                    distance[node.to] = distance[idx] + node.weight;
                     pq.add(new Node(node.to, distance[node.to]));
                 }
             }
