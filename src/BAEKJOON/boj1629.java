@@ -25,4 +25,5 @@ public class boj1629 {
         }
         return (int) (temp*temp%c);
     }
+
 }
