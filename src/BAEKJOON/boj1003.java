@@ -19,9 +19,8 @@ public class boj1003 {
         if(max <3) board = new int[4][2];
         else board = new int[max+1][2];
         fill();
-        for (int i = 0; i < arr.length; i++) {
-            int cur = arr[i];
-            sb.append(board[cur][0] + " " + board[cur][1] + "\n");
+        for (int cur : arr) {
+            sb.append(board[cur][0]).append(" ").append(board[cur][1]).append("\n");
         }
         System.out.println(sb.toString());
         br.close();
