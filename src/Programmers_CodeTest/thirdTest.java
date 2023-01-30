@@ -13,7 +13,6 @@ public class thirdTest {
             people[i] = trust[i][0];
             direction[trust[i][1]] += 1;
         }
-        
         for (int i = 0; i < direction.length; i++) {
             max = Math.max(max, direction[i]);
         }
