@@ -10,9 +10,9 @@ public class boj1013 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
-        for (int i = 0; i < n; i++) {
+        while(n --> 0){
             String test = br.readLine();
-            if(test.matches(pattern)) sb.append("YSE\n");
+            if(test.matches(pattern)) sb.append("YES\n");
             else sb.append("NO\n");
         }
         System.out.println(sb.toString());
